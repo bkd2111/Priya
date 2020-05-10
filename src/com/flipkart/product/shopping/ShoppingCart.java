@@ -4,6 +4,7 @@
 package com.flipkart.product.shopping;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 import com.flipkart.product.Mobile;
@@ -87,6 +88,12 @@ public class ShoppingCart {
 		for (Product product : cart) {
 			System.out.println("Product Name is : " + product.getName() + ", Product Description : "
 					+ product.getDescription() + "," + " and Product Price is : " + product.getPrice());
+		}
+		for (int i = 0; i < cart.size(); i++) {
+			Product product = cart.get(i);
+			System.out.println("Product Name is : " + product.getName() + ", Product Description : "
+					+ product.getDescription() + "," + " and Product Price is : " + product.getPrice());
+
 		}
 	}
 
